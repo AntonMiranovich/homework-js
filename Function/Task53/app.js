@@ -7,9 +7,10 @@ const customJSONParse = str => {
 
     const result = {}
 
-    arrArr.forEach(el => result[el[0].replaceAll(/\'|\"/g, '')] = el[1].replaceAll(/\'|\"/g, ''))
+    arrArr.forEach(el => isNaN(el[1]) ? result[el[0].replaceAll(/\'|\"/g, '')] = el[1].replaceAll(/\'|\"/g, '') : result[el[0].replaceAll(/\'|\"/g, '')] = +el[1].replaceAll(/\'|\"/g, ''))
 
     return result
 }
 
 console.log(customJSONParse('{"age": 30, "city": "New York" , "name":"Anton"}'));
+
