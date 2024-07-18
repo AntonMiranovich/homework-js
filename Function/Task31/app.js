@@ -40,10 +40,10 @@ const checkLength = (arr) => {
 
     for (let i = 0; i < arr.length; i++) {
         const newArr = arr.filter((el) => arr[i] !== el)
-        if(result.count<arr.length-newArr.length){
-            result={
-                title:arr[i],
-                count:arr.length-newArr.length
+        if (result.count < arr.length - newArr.length) {
+            result = {
+                title: arr[i],
+                count: arr.length - newArr.length
             }
         }
     }
@@ -51,4 +51,4 @@ const checkLength = (arr) => {
     return `Строка \'${result.title}\' повториласть ${result.count} раз(а)`
 }
 
-console.log(checkLength(['anton', 'an', 'anton', 'an', 'an']));
+console.log(checkLength(['anton', 'Ваня', 'anton', 'Ваня', 'Ваня']));
