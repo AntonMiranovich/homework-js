@@ -23,7 +23,7 @@ class Employee extends Person {
     }
 }
 
-// Примеры использования
+
 const employee1 = new Employee("Alice", "Developer", 5000);
 const employee2 = new Employee("Bob", "Manager", 7000);
 const employee3 = new Employee("Charlie", "Designer", 4000);
