@@ -22,9 +22,6 @@ class DataGenerator {
 }
 
 class SquareArray extends DataGenerator {
-    constructor(size) {
-        super(size);
-    }
 
     getSquareArray() {
        return this.generateArray().map(el => el * el)
